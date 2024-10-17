@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyeng Career</title>
+    <style>
+        /* Your existing CSS styles here... */
+
+        /* Popup Styles */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        .popup {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            animation: popup-fade-in 0.5s ease-in-out;
+        }
+
+        @keyframes popup-fade-in {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .popup h2 {
+            margin-bottom: 20px;
+        }
+
+        .popup input[type="text"],
+        .popup input[type="email"],
+        .popup input[type="tel"],
+        .popup textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .popup button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Close button */
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Thank you message */
+        .thank-you-message {
+            display: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Popup Container -->
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <span class="close-button" id="close-popup">&times;</span>
+            <h2>Welcome to Flyeng Career</h2>
+            <p>Please provide your information:</p>
+            <form id="user-form">
+                <input type="text" id="name" placeholder="Name" required><br>
+                <input type="tel" id="phone" placeholder="Phone Number" required><br>
+                <input type="email" id="email" placeholder="Email" required><br>
+                <textarea id="message" placeholder="Message" rows="4"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Message -->
+    <div class="thank-you-message" id="thank-you-message">
+        <h2>Thank you for providing your information!</h2>
+        <p>We'll get in touch with you shortly.</p>
+    </div>
+
+    <script>
+        // Get references to the popup and thank you message
+        const popupContainer = document.getElementById("popup-container");
+        const thankYouMessage = document.getElementById("thank-you-message");
+
+        // Get references to the close button and user form
+        const closePopupButton = document.getElementById("close-popup");
+        const userForm = document.getElementById("user-form");
+
+        // Event listener to close the popup
+        closePopupButton.addEventListener("click", () => {
+            popupContainer.style.display = "none";
+        });
+
+        // Event listener for form submission
+        userForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            // Collect user information
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // You can store this data or send it to a server here
+
+            // Hide the popup and show the thank you message
+            popupContainer.style.display = "none";
+            thankYouMessage.style.display = "block";
+        });
+
+        // Display the popup on page load (for testing purposes)
+        // You can trigger this based on user interactions or conditions
+        window.onload = () => {
+            popupContainer.style.display = "flex";
+        };
+    </script>
+</body>
+</html>
