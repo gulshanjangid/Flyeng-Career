@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="FC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Computer Software | Flyeng Career</title>
+    <meta name="description" content="Explore the world of computer software. Learn about types, functions, and the importance of software in modern computing.">
+    <meta name="keywords" content="Computer Software, Software Types, Software Functions, Modern Computing, Software Development, Software Importance">
+    <meta name="author" content="Flyeng Career">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.sidenav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav-menu li {
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidenav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 12px;
+    transition: transform 0.3s;
+}
+
+.sidenav-menu li:hover {
+    background-color: greenyellow;
+}
+
+.sidenav-menu li a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 2;
+    margin-left: 250px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-icon:hover {
+    color: #fff;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.next {
+    background-color: #5b7f87;
+    color: white;
+    float: right;
+    margin-right: 2px;
+}
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidenav {
+                width: 0;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .sidenav.active {
+                width: 250px;
+            }
+
+            .content.active {
+                margin-left: 250px;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-3px, 5px);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-3px, -5px);
+            }
+        }
+        .prev {
+    background-color: #5b7f87;
+    color: white;
+    float: left;
+    margin-left: 2px;
+}
+.toc {
+            background-color: #ffe6e6;
+            border: 1px solid purple;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: orangered;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: tomato;
+            font-size: 16px;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidenav" id="sidenav">
+        <ul class="sidenav-menu">
+            <li><a href="a1.html">Introduction to Computers</a></li>
+            <li><a href="a2.html">Computer Hardware</a></li>
+            <li><a href="a3.html">Computer Software</a></li>
+            <li><a href="a4.html">Office Automation Tools</a></li>
+            <li><a href="a5.html">Data Management</a></li>
+            <li><a href="a6.html">Internet and Networking</a></li>
+            <li><a href="a7.html">Computer Security and Privacy</a></li>
+            <li><a href="a8.html">Office Automation Best Practices</a></li>
+            <li><a href="a9.html">Computer Ethics and Digital Citizenship</a></li>
+            <li><a href="a10.html">Emerging Technologies</a></li>
+            <li><a href="a11.html">Case Studies and Practical Projects</a></li>
+            <li><a href="a12.html">Career Opportunities</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <header>
+            <a href="https://www.flyengcareer.com" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </header>
+        <div class="content-page">
+          <h1>Computer Software</h1>
+          <p>Computer software, often referred to simply as "software," is a collection of data or computer instructions that tell the computer how to perform a specific task or function. Software is a crucial component of modern computing and plays a pivotal role in various aspects of our lives.</p>
+
+          <h2>Types of Software</h2>
+          <p>There are several categories of computer software, including:</p>
+          <ul>
+              <li><strong>System Software:</strong> Manages and controls the hardware components of a computer system. Examples include the operating system.</li>
+              <li><strong>Application Software:</strong> Designed for specific tasks or applications, such as word processors, graphic design software, and web browsers.</li>
+              <li><strong>Utility Software:</strong> Provides various tools to manage and optimize the computer system, such as antivirus software and disk cleanup tools.</li>
+              <li><strong>Programming Software:</strong> Tools used by programmers and developers to create software applications.</li>
+          </ul>
+
+          <h2>Functions of Software</h2>
+          <p>Software performs various functions, including:</p>
+          <ul>
+              <li>Executing and managing hardware operations.</li>
+              <li>Providing a user interface for interaction.</li>
+              <li>Running application programs and facilitating communication between them.</li>
+              <li>Enabling data storage, retrieval, and processing.</li>
+          </ul>
+
+          <h2>Importance of Software</h2>
+          <p>Software is essential for modern computing for several reasons:</p>
+          <ul>
+              <li>It enables the computer to perform diverse tasks and execute specific applications.</li>
+              <li>Software can be updated and improved to enhance functionality and security.</li>
+              <li>It facilitates user-friendly interactions with computers and devices.</li>
+              <li>Software development drives innovation and technological advancement.</li>
+          </ul>
+
+          <h2>Conclusion</h2>
+          <p>Computer software is the backbone of the digital age. Understanding its types, functions, and importance is key to making the most of technology and computing resources.</p>
+      </div>
+      <a href="a2.html" class="prev" style="text-decoration: none; display: inline-block; padding: 8px 16px;">&laquo; Previous</a>
+      <a href="a4.html" class="next" style="text-decoration: none; display: inline-block; padding: 8px 16px;">Next &raquo;</a>
+  </div>
+</div>       
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidenav = document.getElementById('sidenav');
+        const content = document.querySelector('.content');
+        const nextButton = document.querySelector('.next');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidenav.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="Android.png">
+    <title>BCA By Flyeng Career</title>
+    <style>
+        /* Basic styling */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #48626f;
+    overflow-y: scroll; 
+        }
+        .content-container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Collapsible styles */
+        .collapsible {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .collapsible:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.03);
+        }
+
+        .collapsible-btn {
+            cursor: pointer;
+            user-select: none;
+            background-color: #007BFF;
+            color: white;
+            text-align: left;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .collapsible-content {
+            padding: 15px 20px;
+            border-left: 1px solid #ddd;
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .collapsible.active .collapsible-content {
+            display: block;
+        }
+
+        /* Animated link styles */
+        .animated-link {
+            color: #007BFF;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .animated-link:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Plus-Minus Icon */
+        .icon::before {
+            content: "+";
+            font-size: 2rem;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .collapsible.active .icon::before {
+            content: "-";
+            transform: rotate(45deg);
+        }
+
+        /* Section colors */
+        .collapsible:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .collapsible:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 123, 255, 0.5);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>Bachelor of Computer Applications(BCA)</h1>
+        
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                1st Semester
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <a href="index.html" class="animated-link"><h2>Computer Fundamentals and Office Automation</h2></a>
+                <a href="#" class="animated-link"><h2>Programming Principles and Algorithms
+                </h2></a>
+                <a href="B-Tech/CSE/c/index.html" class="animated-link"><h2>C Programming</h2></a>
+                <a href="#" class="animated-link"><h2>Business Communication</h2></a>
+            </div>
+        </div>
+
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                2nd Semester
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <a href="#" class="animated-link"><h2>Data Structures and Algorithms
+                </h2></a>
+                <a href="#" class="animated-link"><h2>C++ Programming
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Elements of Statistics
+                </h2></a>
+                
+            </div>
+        </div>
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                3rd Semester
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <a href="#" class="animated-link"><h2>Operating Systems </h2></a>
+                <a href="#" class="animated-link"><h2>Computer Networks
+
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Database Management Systems
+
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Business Accounting
+
+
+                </h2></a>
+                
+            </div>
+        </div>
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                4th Semester
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <a href="#" class="animated-link"><h2>Software Engineering
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Java Programming
+
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Data Communication and Networking </h2></a>
+          
+            </div>
+        </div>
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                5th Semester
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <a href="#" class="animated-link"><h2>Web Technology
+
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Principles of Management
+
+
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Computer Graphics
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Software Testing
+
+                </h2></a>
+          
+            </div>
+        </div>
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                6th Semester
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <a href="#" class="animated-link"><h2>Multimedia Systems
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Environment and Ecology
+
+
+                </h2></a>
+                <a href="#" class="animated-link"><h2>Elective Subjects (varies by university, e.g., Mobile App Development, Artificial Intelligence, etc.)</h2></a>
+          
+            </div>
+        </div>
+        
+
+        
+        
+        <!-- Add more collapsible sections as needed -->
+    </div>
+
+    <script>
+        const collapsibleBtns = document.querySelectorAll('.collapsible-btn');
+
+        collapsibleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

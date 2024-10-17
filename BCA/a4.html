@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="FC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Office Automation Tools | Flyeng Career</title>
+    <meta name="description" content="Explore the world of office automation tools. Learn about software and technologies that streamline office tasks and enhance productivity.">
+    <meta name="keywords" content="Office Automation Tools, Office Software, Productivity Software, Office Technology, Automation Software, Office Efficiency">
+    <meta name="author" content="Flyeng Career">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.sidenav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav-menu li {
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidenav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 12px;
+    transition: transform 0.3s;
+}
+
+.sidenav-menu li:hover {
+    background-color: greenyellow;
+}
+
+.sidenav-menu li a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 2;
+    margin-left: 250px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-icon:hover {
+    color: #fff;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.next {
+    background-color: #5b7f87;
+    color: white;
+    float: right;
+    margin-right: 2px;
+}
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidenav {
+                width: 0;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .sidenav.active {
+                width: 250px;
+            }
+
+            .content.active {
+                margin-left: 250px;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-3px, 5px);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-3px, -5px);
+            }
+        }
+        .prev {
+    background-color: #5b7f87;
+    color: white;
+    float: left;
+    margin-left: 2px;
+}
+.toc {
+            background-color: #ffe6e6;
+            border: 1px solid purple;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: orangered;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: tomato;
+            font-size: 16px;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidenav" id="sidenav">
+        <ul class="sidenav-menu">
+            <li><a href="a1.html">Introduction to Computers</a></li>
+            <li><a href="a2.html">Computer Hardware</a></li>
+            <li><a href="a3.html">Computer Software</a></li>
+            <li><a href="a4.html">Office Automation Tools</a></li>
+            <li><a href="a5.html">Data Management</a></li>
+            <li><a href="a6.html">Internet and Networking</a></li>
+            <li><a href="a7.html">Computer Security and Privacy</a></li>
+            <li><a href="a8.html">Office Automation Best Practices</a></li>
+            <li><a href="a9.html">Computer Ethics and Digital Citizenship</a></li>
+            <li><a href="a10.html">Emerging Technologies</a></li>
+            <li><a href="a11.html">Case Studies and Practical Projects</a></li>
+            <li><a href="a12.html">Career Opportunities</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <header>
+            <a href="https://www.flyengcareer.com" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </header>
+        <div class="content-page">
+          <h1>Office Automation Tools</h1>
+          <p>Office automation tools are software and technologies designed to streamline office tasks, improve efficiency, and enhance productivity. In the modern workplace, these tools play a vital role in managing documents, communication, and data.</p>
+
+          <h2>Key Features of Office Automation Tools</h2>
+          <p>Office automation tools come with a range of features, including:</p>
+          <ul>
+              <li><strong>Document Management:</strong> Tools for creating, editing, and organizing documents.</li>
+              <li><strong>Communication:</strong> Email, chat, and video conferencing tools for effective team communication.</li>
+              <li><strong>Task and Project Management:</strong> Software for tracking tasks, projects, and deadlines.</li>
+              <li><strong>Data Storage:</strong> Cloud storage and data backup solutions for easy access and data security.</li>
+              <li><strong>Automation:</strong> Workflow automation to reduce manual tasks and save time.</li>
+          </ul>
+
+          <h2>Popular Office Automation Tools</h2>
+          <p>Several popular office automation tools are widely used in businesses and organizations, including:</p>
+          <ul>
+              <li><strong>Microsoft Office:</strong> Featuring Word, Excel, PowerPoint, and more for document creation and management.</li>
+              <li><strong>G Suite (Google Workspace):</strong> Providing cloud-based collaboration tools like Google Docs, Sheets, and Drive.</li>
+              <li><strong>Slack:</strong> A communication platform for team collaboration and messaging.</li>
+              <li><strong>Trello:</strong> A project management tool with a user-friendly interface.</li>
+              <li><strong>Asana:</strong> Task and project management software for teams of all sizes.</li>
+          </ul>
+
+          <h2>Benefits of Using Office Automation Tools</h2>
+          <p>Implementing office automation tools offers various benefits, including increased efficiency, reduced errors, improved communication, and better document management. These tools are essential for businesses looking to stay competitive in the digital age.</p>
+
+          <h2>Conclusion</h2>
+          <p>Office automation tools have become indispensable in today's business environment. They simplify tasks, enhance collaboration, and contribute to the overall success of organizations. Understanding and utilizing these tools is crucial for professionals and businesses aiming to thrive in a digital world.</p>
+      <a href="a3.html" class="prev" style="text-decoration: none; display: inline-block; padding: 8px 16px;">&laquo; Previous</a>
+      <a href="a5.html" class="next" style="text-decoration: none; display: inline-block; padding: 8px 16px;">Next &raquo;</a>
+  </div>
+</div>       
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidenav = document.getElementById('sidenav');
+        const content = document.querySelector('.content');
+        const nextButton = document.querySelector('.next');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidenav.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

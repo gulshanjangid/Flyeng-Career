@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="FC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Internet and Networking | Flyeng Career</title>
+    <meta name="description" content="Explore the world of Internet and Networking. Learn about the fundamentals, protocols, and real-world examples of networking in the digital age.">
+    <meta name="keywords" content="Internet and Networking, Network Fundamentals, Networking Protocols, Digital Networking, Internet Examples">
+    <meta name="author" content="Flyeng Career">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.sidenav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav-menu li {
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidenav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 12px;
+    transition: transform 0.3s;
+}
+
+.sidenav-menu li:hover {
+    background-color: greenyellow;
+}
+
+.sidenav-menu li a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 2;
+    margin-left: 250px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-icon:hover {
+    color: #fff;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.next {
+    background-color: #5b7f87;
+    color: white;
+    float: right;
+    margin-right: 2px;
+}
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidenav {
+                width: 0;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .sidenav.active {
+                width: 250px;
+            }
+
+            .content.active {
+                margin-left: 250px;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-3px, 5px);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-3px, -5px);
+            }
+        }
+        .prev {
+    background-color: #5b7f87;
+    color: white;
+    float: left;
+    margin-left: 2px;
+}
+.toc {
+            background-color: #ffe6e6;
+            border: 1px solid purple;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: orangered;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: tomato;
+            font-size: 16px;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidenav" id="sidenav">
+        <ul class="sidenav-menu">
+            <li><a href="a1.html">Introduction to Computers</a></li>
+            <li><a href="a2.html">Computer Hardware</a></li>
+            <li><a href="a3.html">Computer Software</a></li>
+            <li><a href="a4.html">Office Automation Tools</a></li>
+            <li><a href="a5.html">Data Management</a></li>
+            <li><a href="a6.html">Internet and Networking</a></li>
+            <li><a href="a7.html">Computer Security and Privacy</a></li>
+            <li><a href="a8.html">Office Automation Best Practices</a></li>
+            <li><a href="a9.html">Computer Ethics and Digital Citizenship</a></li>
+            <li><a href="a10.html">Emerging Technologies</a></li>
+            <li><a href="a11.html">Case Studies and Practical Projects</a></li>
+            <li><a href="a12.html">Career Opportunities</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <header>
+            <a href="https://www.flyengcareer.com" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </header>
+        <div class="content-page">
+          <h1>Internet and Networking</h1>
+          <p>Internet and networking are the backbone of modern communication and information exchange. In this comprehensive guide, we'll delve into the world of networking, covering fundamental concepts, protocols, and real-world examples.</p>
+
+          <h2>Fundamentals of Networking</h2>
+          <p>Networking is about connecting devices and systems to share information and resources. Key networking concepts include:</p>
+          <ul>
+              <li><strong>Network Types:</strong> Local Area Network (LAN), Wide Area Network (WAN), and the Internet.</li>
+              <li><strong>Protocols:</strong> Transmission Control Protocol/Internet Protocol (TCP/IP), Hypertext Transfer Protocol (HTTP), and more.</li>
+              <li><strong>Devices:</strong> Routers, switches, hubs, and modems.</li>
+          </ul>
+
+          <h2>Networking Protocols</h2>
+          <p>Protocols are the rules that govern data transmission. Learn about the most common networking protocols and their functions, such as:</p>
+          <ul>
+              <li><strong>TCP/IP:</strong> Ensures reliable data delivery across networks.</li>
+              <li><strong>HTTP/HTTPS:</strong> Used for web page retrieval and secure data transmission.</li>
+              <li><strong>SMTP/POP3/IMAP:</strong> Protocols for email communication.</li>
+          </ul>
+
+          <h2>Real-World Examples</h2>
+          <p>Explore real-world scenarios where networking plays a crucial role:</p>
+          <ul>
+              <li><strong>Home Networking:</strong> Setting up a home Wi-Fi network for multiple devices.</li>
+              <li><strong>Online Gaming:</strong> Multiplayer online gaming relies on network connections for real-time gameplay.</li>
+              <li><strong>E-commerce Transactions:</strong> Secure online transactions require encrypted network communication.</li>
+          </ul>
+
+          <h2>Internet of Things (IoT)</h2>
+          <p>Discover how the Internet of Things is revolutionizing the way devices and objects connect and communicate over the internet. IoT examples include:</p>
+          <ul>
+              <li><strong>Smart Home:</strong> Controlling lights, thermostats, and appliances remotely via the internet.</li>
+              <li><strong>Connected Healthcare:</strong> Wearable devices that transmit health data to healthcare providers.</li>
+              <li><strong>Industrial IoT:</strong> Monitoring and controlling machinery in factories for efficiency.</li>
+          </ul>
+
+          <h2>Conclusion</h2>
+          <p>Internet and networking are continuously evolving fields. Understanding their fundamentals and applications is essential in today's digital age.</p>
+      </div>
+      <a href="a5.html" class="prev" style="text-decoration: none; display: inline-block; padding: 8px 16px;">&laquo; Previous</a>
+      <a href="a7.html" class="next" style="text-decoration: none; display: inline-block; padding: 8px 16px;">Next &raquo;</a>
+  </div>
+</div>       
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidenav = document.getElementById('sidenav');
+        const content = document.querySelector('.content');
+        const nextButton = document.querySelector('.next');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidenav.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="Chemistry.png">
+    <title>B.Sc Chemistry Subjects</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #48626f;
+            background-color: #f0f0f0;
+            overflow-y: scroll;
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Collapsible styles */
+        .collapsible {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .collapsible:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.03);
+        }
+
+        .collapsible-btn {
+            cursor: pointer;
+            user-select: none;
+            background-color: #007BFF;
+            color: white;
+            text-align: left;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 20px;
+            width: 100%;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .collapsible-content {
+            padding: 15px 20px;
+            border-left: 1px solid #ddd;
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .collapsible.active .collapsible-content {
+            display: block;
+        }
+
+        /* Animated link styles */
+        .animated-link {
+            color: #007BFF;
+            text-decoration: none;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .animated-link:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Plus-Minus Icon */
+        .icon::before {
+            content: "+";
+            font-size: 2rem;
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+
+        .collapsible.active .icon::before {
+            content: "-";
+            transform: rotate(45deg);
+        }
+
+        /* Section colors */
+        .collapsible:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .collapsible:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 123, 255, 0.5);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content-container">
+        <h1>B.Sc Chemistry Program</h1>
+        
+        <!-- Year 1 -->
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                Year 1
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <!-- Semester 1 -->
+                <div class="collapsible">
+                    <button class="collapsible-btn">
+                        Semester 1
+                        <span class="icon"></span>
+                    </button>
+                    <div class="collapsible-content">
+                        <a href="#" class="animated-link"><h2>General Chemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Inorganic Chemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Physical Chemistry</h2></a>
+                        <!-- Add more subjects and chapters here -->
+                    </div>
+                </div>
+
+                <!-- Semester 2 -->
+                <div class="collapsible">
+                    <button class="collapsible-btn">
+                        Semester 2
+                        <span class="icon"></span>
+                    </button>
+                    <div class="collapsible-content">
+                        <a href="#" class="animated-link"><h2>Organic Chemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Quantum Chemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Chemical Thermodynamics</h2></a>
+                        <!-- Add more subjects and chapters here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Year 2 -->
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                Year 2
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <!-- Semester 3 -->
+                <div class="collapsible">
+                    <button class="collapsible-btn">
+                        Semester 3
+                        <span class="icon"></span>
+                    </button>
+                    <div class="collapsible-content">
+                        <a href="#" class="animated-link"><h2>Analytical Chemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Chemical Kinetics</h2></a>
+                        <!-- Add more subjects and chapters here -->
+                    </div>
+                </div>
+
+                <!-- Semester 4 -->
+                <div class="collapsible">
+                    <button class="collapsible-btn">
+                        Semester 4
+                        <span class="icon"></span>
+                    </button>
+                    <div class="collapsible-content">
+                        <a href="#" class="animated-link"><h2>Biochemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Environmental Chemistry</h2></a>
+                        <!-- Add more subjects and chapters here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Year 3 -->
+        <div class="collapsible">
+            <button class="collapsible-btn">
+                Year 3
+                <span class="icon"></span>
+            </button>
+            <div class="collapsible-content">
+                <!-- Semester 5 -->
+                <div class="collapsible">
+                    <button class="collapsible-btn">
+                        Semester 5
+                        <span class="icon"></span>
+                    </button>
+                    <div class="collapsible-content">
+                        <a href="#" class="animated-link"><h2>Physical Organic Chemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Chemical Analysis</h2></a>
+                        <!-- Add more subjects and chapters here -->
+                    </div>
+                </div>
+
+                <!-- Semester 6 -->
+                <div class="collapsible">
+                    <button class="collapsible-btn">
+                        Semester 6
+                        <span class="icon"></span>
+                    </button>
+                    <div class="collapsible-content">
+                        <a href="#" class="animated-link"><h2>Industrial Chemistry</h2></a>
+                        <a href="#" class="animated-link"><h2>Research Project</h2></a>
+                        <!-- Add more subjects and chapters here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for handling collapsible sections
+        const collapsibleBtns = document.querySelectorAll('.collapsible-btn');
+
+        collapsibleBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

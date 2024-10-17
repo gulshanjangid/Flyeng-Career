@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="FC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Data Management | Flyeng Career</title>
+    <meta name="description" content="Explore the world of data management. Learn about data storage, retrieval, organization, and security. Enhance your data management skills.">
+    <meta name="keywords" content="Data Management, Data Storage, Data Retrieval, Data Organization, Data Security, Data Management Skills">
+    <meta name="author" content="Flyeng Career">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.sidenav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav-menu li {
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidenav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 12px;
+    transition: transform 0.3s;
+}
+
+.sidenav-menu li:hover {
+    background-color: greenyellow;
+}
+
+.sidenav-menu li a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 2;
+    margin-left: 250px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-icon:hover {
+    color: #fff;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.next {
+    background-color: #5b7f87;
+    color: white;
+    float: right;
+    margin-right: 2px;
+}
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidenav {
+                width: 0;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .sidenav.active {
+                width: 250px;
+            }
+
+            .content.active {
+                margin-left: 250px;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-3px, 5px);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-3px, -5px);
+            }
+        }
+        .prev {
+    background-color: #5b7f87;
+    color: white;
+    float: left;
+    margin-left: 2px;
+}
+.toc {
+            background-color: #ffe6e6;
+            border: 1px solid purple;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: orangered;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: tomato;
+            font-size: 16px;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidenav" id="sidenav">
+        <ul class="sidenav-menu">
+            <li><a href="a1.html">Introduction to Computers</a></li>
+            <li><a href="a2.html">Computer Hardware</a></li>
+            <li><a href="a3.html">Computer Software</a></li>
+            <li><a href="a4.html">Office Automation Tools</a></li>
+            <li><a href="a5.html">Data Management</a></li>
+            <li><a href="a6.html">Internet and Networking</a></li>
+            <li><a href="a7.html">Computer Security and Privacy</a></li>
+            <li><a href="a8.html">Office Automation Best Practices</a></li>
+            <li><a href="a9.html">Computer Ethics and Digital Citizenship</a></li>
+            <li><a href="a10.html">Emerging Technologies</a></li>
+            <li><a href="a11.html">Case Studies and Practical Projects</a></li>
+            <li><a href="a12.html">Career Opportunities</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <header>
+            <a href="https://www.flyengcareer.com" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </header>
+        <div class ="content-page">
+          <h1>Data Management</h1>
+          <p>Data management is a fundamental aspect of information technology and business operations. It encompasses the systematic process of collecting, storing, organizing, and securing data to ensure its availability and usability for various purposes. In this comprehensive guide, we'll explore the key facets of data management.</p>
+
+          <h2>Data Storage</h2>
+          <p>Data storage is the foundation of data management. It involves the physical and digital means of storing data. Common storage mediums include hard drives, solid-state drives, cloud storage, and more. Understanding the types of data storage is crucial for effective data management.</p>
+
+          <h2>Data Retrieval</h2>
+          <p>Data retrieval is the process of accessing stored data when needed. Efficient data retrieval relies on robust indexing and search mechanisms. We'll dive into techniques and tools that streamline the data retrieval process.</p>
+
+          <h2>Data Organization</h2>
+          <p>Data organization is about structuring data for easy access and management. It involves the use of databases, data models, and information architectures. Effective data organization enhances data accessibility and usability.</p>
+
+          <h2>Data Security</h2>
+          <p>Data security is a paramount concern in data management. Protecting sensitive and valuable data from unauthorized access and potential threats is crucial. We'll discuss encryption, access controls, and security best practices to safeguard your data.</p>
+
+          <h2>Data Management Skills</h2>
+          <p>Data management skills are highly sought after in the digital era. Whether you're a data professional or an individual looking to enhance your digital literacy, we'll provide insights into developing and improving data management skills.</p>
+
+          <h2>Challenges and Trends</h2>
+          <p>Data management is not without its challenges. We'll address common data management issues and explore current trends, including big data, data analytics, and the evolving role of data in decision-making processes.</p>
+
+          <h2>Conclusion</h2>
+          <p>Data management plays a pivotal role in today's data-driven world. Whether you're an IT professional, a data scientist, or someone simply interested in managing personal data effectively, this guide equips you with knowledge and skills for successful data management.</p>
+      <a href="a4.html" class="prev" style="text-decoration: none; display: inline-block; padding: 8px 16px;">&laquo; Previous</a>
+      <a href="a6.html" class="next" style="text-decoration: none; display: inline-block; padding: 8px 16px;">Next &raquo;</a>
+  </div>
+</div>       
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidenav = document.getElementById('sidenav');
+        const content = document.querySelector('.content');
+        const nextButton = document.querySelector('.next');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidenav.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

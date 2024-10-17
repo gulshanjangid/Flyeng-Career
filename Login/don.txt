@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title>Firebase_form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="form">
+                <h2>Login Form</h2>
+                <form>
+                    <div class="inputbox">
+                        <input type="text" value="" id="username" required>
+                        <span>username</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" value="" id="email" required>
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" value="" id="phone" required>
+                        <span>Phone Number</span>
+                    </div>
+                    <input type="submit" value="submit" class="sub" id="submit">
+                </form>
+            </div>
+        </div>
+        <script type="module">
+               // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+            import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+  
+  // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyAkPgAR0Hs6v5oNlmxYxI2OGh-S8YA2OWU",
+              authDomain: "creativetutorial-43ba7.firebaseapp.com",
+              projectId: "creativetutorial-43ba7",
+              storageBucket: "creativetutorial-43ba7.appspot.com",
+              messagingSenderId: "52869654198",
+              appId: "1:52869654198:web:0a19740d1f26ade1066817"
+            };
+
+  // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+
+   //get ref to database services
+             const db = getDatabase(app);
+
+             document.getElementById("submit").addEventListener('click', function(e){
+              e.preventDefault();
+              set(ref(db, 'user/' + document.getElementById("username").value),
+              {
+   
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                PhoneNumber: document.getElementById("phone").value
+
+              });
+                alert("Login Sucessfull  !");
+             })
+        </script>
+    </body>
+</html>
+
+
+     const firebaseConfig = {
+    apiKey: "AIzaSyD5ZrEoD4jJQMf9azvTPzpUMzv4xR1BP-w",
+    authDomain: "flyengcareer-1da58.firebaseapp.com",
+    databaseURL: "https://flyengcareer-1da58-default-rtdb.firebaseio.com",
+    projectId: "flyengcareer-1da58",
+    storageBucket: "flyengcareer-1da58.appspot.com",
+    messagingSenderId: "788047855405",
+    appId: "1:788047855405:web:1e00d95bf6ebff92b59da4",
+    measurementId: "G-YMD7W7WQE3"
+  };
+
+   <footer id="advanced-footer">
+    <div class="footer-content">
+        <div class="footer-left">
+            <h2>About us</h2>
+           <p>Flyeng Career is a leading Company in the Education Industry.<br> It aims to provide quality content with the best Resources and in a Structured Manner</p>
+        </div>
+        <div class="footer-center">
+            <h2>Terms and Policy</h2>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Affiliate Disclosure</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <h2>Contact Us</h2>
+            <address>
+                Dewan Shahpura<br>
+                Jaipur, Rajasthan<br>
+                Email: <a href="contact@flyengcareer.com">contact@flyengcareer.com</a><br>
+                Phone: <a href="91-8058803339">91-8058803339</a>
+            </address>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-copyright">
+            &copy; 2023 Flyeng Career All Rights Reserved.
+        </div>
+        <button id="scrollToTopButton" title="Go to Top">Top⬆️</button>
+    </div>
+</footer>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD5ZrEoD4jJQMf9azvTPzpUMzv4xR1BP-w",
+    authDomain: "flyengcareer-1da58.firebaseapp.com",
+    databaseURL: "https://flyengcareer-1da58-default-rtdb.firebaseio.com",
+    projectId: "flyengcareer-1da58",
+    storageBucket: "flyengcareer-1da58.appspot.com",
+    messagingSenderId: "788047855405",
+    appId: "1:788047855405:web:1e00d95bf6ebff92b59da4",
+    measurementId: "G-YMD7W7WQE3"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="FC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Introduction to Computers | Flyeng Career</title>
+    <meta name="description" content="Explore the world of computers with our detailed guide. Learn about computer types, components, operating systems, software, and their importance in modern life.">
+    <meta name="keywords" content="Introduction to Computers, Computer Types, Computer Components, Operating Systems, Computer Software, Modern Technology, Digital Literacy">
+    <meta name="author" content="Flyeng Career">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.sidenav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav-menu li {
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidenav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 12px;
+    transition: transform 0.3s;
+}
+
+.sidenav-menu li:hover {
+    background-color: greenyellow;
+}
+
+.sidenav-menu li a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 2;
+    margin-left: 250px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-icon:hover {
+    color: #fff;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.next {
+    background-color: #5b7f87;
+    color: white;
+    float: right;
+    margin-right: 2px;
+}
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidenav {
+                width: 0;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .sidenav.active {
+                width: 250px;
+            }
+
+            .content.active {
+                margin-left: 250px;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-3px, 5px);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-3px, -5px);
+            }
+        }
+        .prev {
+    background-color: #5b7f87;
+    color: white;
+    float: left;
+    margin-left: 2px;
+}
+.toc {
+            background-color: #ffe6e6;
+            border: 1px solid purple;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: orangered;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: tomato;
+            font-size: 16px;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidenav" id="sidenav">
+        <ul class="sidenav-menu">
+            <li><a href="a1.html">Introduction to Computers</a></li>
+            <li><a href="a2.html">Computer Hardware</a></li>
+            <li><a href="a3.html">Computer Software</a></li>
+            <li><a href="a4.html">Office Automation Tools</a></li>
+            <li><a href="a5.html">Data Management</a></li>
+            <li><a href="a6.html">Internet and Networking</a></li>
+            <li><a href="a7.html">Computer Security and Privacy</a></li>
+            <li><a href="a8.html">Office Automation Best Practices</a></li>
+            <li><a href="a9.html">Computer Ethics and Digital Citizenship</a></li>
+            <li><a href="a10.html">Emerging Technologies</a></li>
+            <li><a href="a11.html">Case Studies and Practical Projects</a></li>
+            <li><a href="a12.html">Career Opportunities</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <header>
+            <a href="https://www.flyengcareer.com" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </header>
+        <div class="content-page">
+          <h1>Introduction to Computers</h1>
+          <p>Welcome to the world of computers! In this comprehensive guide, we will delve into the fascinating realm of computer technology. Computers are an integral part of our daily lives, and understanding their intricacies is essential for modern living.</p>
+
+          <h2>What is a Computer?</h2>
+          <p>A computer is a sophisticated electronic device designed to process data and execute various tasks. It is composed of intricate hardware components, including the central processing unit (CPU), memory (RAM), storage devices, and a range of input/output peripherals. Computers are capable of running programs, manipulating data, and communicating with other devices.</p>
+
+          <h2>Types of Computers</h2>
+          <p>Computers come in various forms and sizes, each tailored to specific needs. The primary types of computers include:</p>
+          <ul>
+              <li>Personal Computers (PCs): Used for general computing tasks by individuals.</li>
+              <li>Laptops and Notebooks: Portable computers suitable for on-the-go computing.</li>
+              <li>Tablets and Mobile Devices: Compact devices for mobile computing and entertainment.</li>
+              <li>Servers and Mainframes: Powerful computers used for data processing and network management.</li>
+              <li>Supercomputers: High-performance machines employed for complex scientific and engineering simulations.</li>
+          </ul>
+
+          <h2>Basic Components</h2>
+          <p>A computer's core components include:</p>
+          <ul>
+              <li>Central Processing Unit (CPU): The "brain" of the computer responsible for executing instructions.</li>
+              <li>Memory (RAM): Temporary storage used for active programs and data.</li>
+              <li>Storage Devices: Hard drives or Solid-State Drives (SSDs) for long-term data storage.</li>
+              <li>Input/Output Devices: Peripherals like keyboards, mice, monitors, and printers for user interaction.</li>
+          </ul>
+
+          <h2>Operating Systems</h2>
+          <p>An operating system (OS) is crucial software that manages hardware resources and provides a user-friendly interface. Common operating systems include Windows, macOS, and various distributions of Linux.</p>
+
+          <h2>Software and Applications</h2>
+          <p>Software encompasses a wide range of programs and applications that run on a computer. These include word processors, web browsers, games, multimedia software, and more. Understanding software is vital for utilizing the full potential of your computer.</p>
+
+          <h2>Importance in Modern Life</h2>
+          <p>Computers are ubiquitous in today's world, playing a pivotal role in various fields, such as education, business, healthcare, entertainment, and scientific research. They have revolutionized the way we work, communicate, and access information. Digital literacy and computer skills are increasingly essential for success in the modern era.</p>
+
+          <h2>Conclusion</h2>
+          <p>This introductory chapter offers a glimpse into the vast realm of computers and their significance in contemporary life. As you proceed through the following chapters, you'll gain a deeper understanding of computer hardware, software, and their diverse applications.</p>
+      </div>
+      <br>
+      <a href="a2.html" class="next" style="text-decoration: none; display: inline-block; padding: 8px 16px;">Next &raquo;</a>
+  </div>
+</div>       
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidenav = document.getElementById('sidenav');
+        const content = document.querySelector('.content');
+        const nextButton = document.querySelector('.next');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidenav.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

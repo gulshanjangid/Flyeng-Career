@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="x-icon" href="FC.jpg">
+
+    <title>Log-in & Sign-up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="content01">
+        <div class="img-slider">
+            <h2>Welcome to Flyeng Career</h2>
+            <p>We are a Community together helping thousands of students out there who are struggling! </p>
+                <img src="FC.jpg" alt="img">
+        </div>
+        <div class="content">
+            <h2>Get Started</h2>
+            <p>Already have account ?  <a href="#" id="login">Sign In </a></p>
+            <form id="form">
+                <label for="name" id="nlabel">Name</label> <br>
+                <input type="text" id="fname" placeholder="Enter your name" autocomplete="off"> <br>
+                <label for="email" id="elabel">Email</label> <br>
+                <input type="email" id="eemail" placeholder="xyz@gmail.com" autocomplete="off"> <br>
+                <label for="password" id="plabel">Password</label> <br>
+                <input type="password" name="password" id="lpassword"> <br>
+                <button type="submit"  onclick="UserRegister()" id="btn">Sign Up </button>
+            </form>
+            <div class="other">
+                <h3>Or Sign up with </h3>
+                <div class="icons">
+                    <img src="Images/google.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="user-info">
+        <span id="user-name"></span>
+        <button id="logout-btn">Logout</button>
+      </div>
+    <div class="container display" id="content02">
+        <div class="img-slider">
+            <h2>Welcome to Flyeng Career</h2>
+            <p>we are a community together helping thousands of people out there who are struggling </p>
+                <img src="./Images/undraw_mobile_login_ikmv-removebg-preview.png" alt="img" class="sign-img">
+        </div>
+        <div class="content">
+            <h2>Get Started</h2>
+            <p>Don't have account ?  <a href="#" id="sign-up" >Sign up </a></p>
+            <form action="" id="form">
+                <label for="email" id="elabel">Email</label> <br>
+                <input type="email" id="eemail" placeholder="Lucifer@gmail.com" autocomplete="off"> <br>
+                <label for="password" id="plabel">Password</label> <br>
+                <input type="password" name="password" id="lpassword"> <br>
+                <button type="submit" onclick="SignIn()" id="btn1">Log-In </button>
+            </form>
+            <div class="other">
+                <h3>Or Sign up with </h3>
+                <div class="icons">
+                    <img src="https://img.icons8.com/bubbles/50/000000/google-logo.png"/>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="advanced-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>About us</h2>
+               <p>Flyeng Career is a leading Company in the Education Industry.<br> It aims to provide quality content with the best Resources and in a Structured Manner</p>
+            </div>
+            <div class="footer-center">
+                <h2>Terms and Policy</h2>
+                <ul>
+                    <li><a href="AboutUs/about.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                    <li><a href="Disclaimer.html">Disclaimer</a></li>
+                    <li><a href="Terms.html">Terms and Conditions</a></li>
+                    <li><a href="AD.html">Affiliate Disclosure</a></li>
+                    <li><a href="copy.html">Copyright</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                                <h2>Most Popular Courses</h2>
+                <address>
+                   <h4><a href="B-Tech/CSE/java/index.html" style="color: #8594c0;">Java</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">DSA</a></h4>
+                   <h4 ><a href="B-Tech/CSE/c/c.html" style="color: #8594c0;">C</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">C++</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">Python</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">JavaScript</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">MYSQL</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">Machine Learning</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">Artifical Intelligence</a></h4>
+                    <h4 ><a href="#" style="color: #8594c0;">MongoDB</a></h4>
+                </address>
+               
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copyright">
+                &copy; 2023 Flyeng Career All Rights Reserved.
+            </div>
+            <button id="scrollToTopButton" title="Go to Top">Top⬆️</button>
+        </div>
+    </footer>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+<script src="data.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="server.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="x-icon" href="FC">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Computer Hardware | Flyeng Career</title>
+    <meta name="description" content="Explore the world of computer hardware. Learn about the components, peripherals, and architecture of modern computers.">
+    <meta name="keywords" content="Computer Hardware, Hardware Components, Computer Peripherals, Computer Architecture, Modern Computers, PC Components">
+    <meta name="author" content="Flyeng Career">
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+}
+
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1;
+}
+
+.sidenav-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav-menu li {
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidenav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 12px;
+    transition: transform 0.3s;
+}
+
+.sidenav-menu li:hover {
+    background-color: greenyellow;
+}
+
+.sidenav-menu li a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: 0.5s;
+    z-index: 2;
+    margin-left: 250px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.home-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.home-icon:hover {
+    color: #fff;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.next {
+    background-color: #5b7f87;
+    color: white;
+    float: right;
+    margin-right: 2px;
+}
+@media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidenav {
+                width: 0;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 10px;
+                font-size: 17px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .sidenav.active {
+                width: 250px;
+            }
+
+            .content.active {
+                margin-left: 250px;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-3px, 5px);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-3px, -5px);
+            }
+        }
+        .prev {
+    background-color: #5b7f87;
+    color: white;
+    float: left;
+    margin-left: 2px;
+}
+.toc {
+            background-color: #ffe6e6;
+            border: 1px solid purple;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: orangered;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            margin: 10px 0;
+        }
+
+        .toc a {
+            text-decoration: none;
+            color: tomato;
+            font-size: 16px;
+            display: block;
+        }
+
+        .toc a:hover {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="sidenav" id="sidenav">
+        <ul class="sidenav-menu">
+            <li><a href="a1.html">Introduction to Computers</a></li>
+            <li><a href="a2.html">Computer Hardware</a></li>
+            <li><a href="a3.html">Computer Software</a></li>
+            <li><a href="a4.html">Office Automation Tools</a></li>
+            <li><a href="a5.html">Data Management</a></li>
+            <li><a href="a6.html">Internet and Networking</a></li>
+            <li><a href="a7.html">Computer Security and Privacy</a></li>
+            <li><a href="a8.html">Office Automation Best Practices</a></li>
+            <li><a href="a9.html">Computer Ethics and Digital Citizenship</a></li>
+            <li><a href="a10.html">Emerging Technologies</a></li>
+            <li><a href="a11.html">Case Studies and Practical Projects</a></li>
+            <li><a href="a12.html">Career Opportunities</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <header>
+            <a href="https://www.flyengcareer.com" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <button class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </header>
+        <div class="content-page">
+          <h1>Computer Hardware</h1>
+          <p>Computer hardware refers to the physical components that make up a computer system. It encompasses various devices and components that work together to process data and perform tasks. Understanding computer hardware is essential for anyone interested in technology or computer science.</p>
+
+          <h2>Key Hardware Components</h2>
+          <p>Computer hardware includes the following key components:</p>
+          <ul>
+              <li><strong>Central Processing Unit (CPU):</strong> The CPU is the "brain" of the computer, responsible for executing instructions and performing calculations.</li>
+              <li><strong>Memory (RAM):</strong> Random Access Memory (RAM) is used for temporary data storage while the computer is in use.</li>
+              <li><strong>Storage Devices:</strong> Hard drives and Solid-State Drives (SSDs) store data and software for long-term use.</li>
+              <li><strong>Motherboard:</strong> The motherboard is the main circuit board that connects all components and allows them to communicate.</li>
+              <li><strong>Graphics Processing Unit (GPU):</strong> GPUs are responsible for rendering images and graphics on the screen.</li>
+          </ul>
+
+          <h2>Peripheral Devices</h2>
+          <p>Peripherals are devices connected to the computer to provide input and output functions. They include:</p>
+          <ul>
+              <li>Keyboards and Mice for input.</li>
+              <li>Monitors for displaying visual output.</li>
+              <li>Printers for producing hard copies of documents.</li>
+              <li>Scanners for digitizing images and documents.</li>
+              <li>External Hard Drives for additional storage.</li>
+          </ul>
+
+          <h2>Computer Architecture</h2>
+          <p>Computer architecture is the design of a computer system and its components. It determines how data is processed, stored, and communicated within the system. Understanding computer architecture helps in optimizing system performance.</p>
+
+          <h2>Modern Computers</h2>
+          <p>Modern computers come in various forms, including desktops, laptops, tablets, and smartphones. They have become an integral part of our daily lives, enabling us to work, communicate, and access information with ease.</p>
+
+          <h2>Conclusion</h2>
+          <p>Computer hardware is the foundation of every computing device. Learning about hardware components and their functions is crucial for anyone looking to delve deeper into the world of technology.</p>
+      <a href="a1.html" class="prev" style="text-decoration: none; display: inline-block; padding: 8px 16px;">&laquo; Previous</a>
+      <a href="a3.html" class="next" style="text-decoration: none; display: inline-block; padding: 8px 16px;">Next &raquo;</a>
+  </div>
+</div>       
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const sidenav = document.getElementById('sidenav');
+        const content = document.querySelector('.content');
+        const nextButton = document.querySelector('.next');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            sidenav.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
